@@ -1794,6 +1794,12 @@ textarea.form-control {
   }
 }
 
+@media (max-width: 750px) {
+  .bg-home-7 img{
+    margin-top: 9%;
+  }
+}
+
 @media (max-width: 1024px) {
   .slider {
     width: 100%;
