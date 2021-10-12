@@ -1800,6 +1800,12 @@ textarea.form-control {
   }
 }
 
+@media (max-width: 415px) {
+  .bg-home-7 img{
+    margin-top: 17%;
+  }
+}
+
 @media (max-width: 1024px) {
   .slider {
     width: 100%;
