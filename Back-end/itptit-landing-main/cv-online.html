@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>IT Club PTIT Hanoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="ITPTIT là câu lạc bộ học thuật trực thuộc khoa CNTT1 học viện Công nghệ Bưu chính Viễn thông"/>
+    <meta name="keywords" content="itptit, itclub, itptit.com, clb it"/>
+    <meta content="IT Club PTIT" name="author"/>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css"/>
+    <!-- magnific pop-up -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+    <!-- magnific pop-up -->
+    <link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.min.css"/>
+    <!-- Pe-icon-7 icon -->
+    <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css"/>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky navbar-light">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand logo text-uppercase" href="/">
+            <div class="logo-light text-white">ITPTIT</div>
+            <div class="logo-dark">ITPTIT</div>
+        </a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- START HOME -->
+<section class="bg-home-7 align-items-center pt-5 pt-lg-0" id="home">
+    <div class="bg-overlay"></div>
+    <div class="container particels-slidero">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <div class="d-flex d-lg-block">
+                    <div class="mx-auto">
+                        <div>
+                            <img src="images/club-logo.jpg" class="club-logo" alt="">
+                        </div>
+                        <h1 class="home-title mt-3 text-white">IT PTIT Club</h1>
+
+                        <p class="text-white-50 mt-3 f-20">
+                            Mãi là anh em!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="d-flex">
+                    <div class="mx-auto">
+                        <img src="images/feature.png" class="feature-image" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END HOME -->
+
+<!-- START CV -->
+<section class="section-form pb-5">
+    <div class="container">
+        <h1 class="text-center">Đơn CV</h1>
+        <div class="card">
+            <div class="card-header text-center">
+                <span>CV phần nào thể hiện con người mình, vì vậy hãy điền 1 cách nghiêm túc nha các em</span>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="form-group">
+                        <label class="heading-form" for="fullname">Họ và tên: <span>(*)</span></label>
+                        <input type="text" class="form-control" name="fullname" id="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form">Giới tính: <span>(*)</span></label>
+                        <br>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Nam</label><br>
+                        <input type="radio"  name="gender" id="female" value="female">
+                        <label for="female">Nữ</label><br>
+                        <input type="radio" name="gender" id="other" value="otherGender">
+                        <label for="otherGender">Khác</label><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="country">Quê quán: <span>(*)</span></label>
+                        <input type="text" class="form-control" name="country" id="country">
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form">Ngành học: <span>(*)</span></label>
+                        <br>
+                        <input type="radio" name="subject" id="cntt-attt" value="cntt-attt">
+                        <label for="cntt-attt">Công nghệ thông tin, An toàn thông tin</label><br>
+                        <input type="radio"  name="subject" id="cndpt" value="cndpt">
+                        <label for="cndpt">Công nghệ đa phương tiện</label><br>
+                        <input type="radio" name="subject" id="ttdpt" value="ttdpt">
+                        <label for="ttdpt">Truyền thông đa phương tiện</label><br>
+                        <input type="radio" name="subject" id="otherSubject" value="otherSubject">
+                        <label for="otherSubject">Khác</label><br>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="classroom">Lớp: <span>(*)</span></label>
+                        <input type="text" class="form-control" name="classroom" id="classroom" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="rollno">Mã sinh viên: <span>(*)</span></label>
+                        <input type="text" class="form-control" name="rollno" id="rollno" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="mail">Gmail: <span>(*)</span></label>
+                        <input type="email" class="form-control" name="mail" id="mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="phone">Số điện thoại: <span>(*)</span></label>
+                        <input type="text" class="form-control" name="phone" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="facebook-link">Link facebook: <span>(*)</span></label>
+                        <input type="text" class="form-control" name="facebook-link" id="facebook-link" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="ability">Sở trường, sở đoản, sở thích:</label>
+                        <textarea class="form-control" name="ability" id="ability" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="achievement">Thành tích(học tập, cuộc thi,cá nhân) (nếu có):</label>
+                        <textarea class="form-control" name="achievement" id="achievement" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="emotion">Tự đánh giá về tính cách của bạn (tham khảo tại <a href="https://www.tracnghiemmbti.com" target="_blank">https://www.tracnghiemmbti.com</a>)</label>
+                        <textarea class="form-control" name="emotion" id="emotion" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="formal-question1">Bạn đã tìm hiểu gì về câu lạc bộ chưa?</label>
+                        <input type="text" class="form-control" name="formal-question1" id="formal-question1">
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="formal-question2">Dự định của bạn khi vào câu lạc bộ:</label>
+                        <textarea class="form-control" name="formal-question2" id="formal-question2" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="formal-question3">Bạn mong muốn nhận được những gì khi hoạt động trong CLB?</label>
+                        <textarea class="form-control" name="formal-question3" id="formal-question3" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="heading-form" for="formal-question4">Bạn hiểu thế nào về ngành học của bạn:</label>
+                        <textarea class="form-control" name="formal-question4" id="formal-question4" cols="30" rows="5"></textarea>
+                    </div>
+                    <div id="main-question"></div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-1">Gửi</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CV -->
+
+<!-- START WORK -->
+<section class="section bg-testimonial" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <p class="title-sub-heading text-primary f-18">Câu hỏi về CLB</p>
+                    <p class="title-desc text-muted mt-2">
+                        Dưới đây là những câu hỏi phổ biến thường được các bạn dành cho CLB.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12 mt-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading1">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                                    CLB được hình thành như thế nào?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    IT PTIT club (IT) – là câu lạc bộ trực thuộc và lớn mạnh của khoa CNTT1 Học viện Công nghệ Bưu chính Viễn thông. CLB được hình thành từ sự hợp nhất của 2 CLB kì cựu nhất trong học viện là CLB SRC PTIT và CLB lập trình ProPTIT vào tháng 12 năm 2014. Sau 6 năm hợp nhất clb đã đạt được rất nhiều thành công lớn.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading9">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true" aria-controls="collapseOne">
+                                    CLB có chức năng gì?
+                                </button>
+                            </h2>
+                            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    - Là cầu nối giữa các thành viên CLB với Khoa CNTT và Học viện, giữa sinh viên với các cuộc thi, các cơ hội nghề nghiệp.
+                                    <br>
+                                    - Là môi trường học tập sáng tạo, năng động, giúp đỡ thành viên CLB đạt thành tích cao trong học tập, phát triển tốt các kỹ năng nghề nghiệp.
+                                    <br>
+                                    - Chia sẻ kinh nghiệm, kiến thức, kỹ năng giữa các thành viên, quảng bá hình ảnh và gắn kết với sinh viên trong toàn Học viện.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading2">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseOne">
+                                    CLB có nhiệm vụ gì?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    - Hỗ trợ phát triển tư duy và kĩ năng lập trình.
+                                    <br>
+                                    - Phối hợp với khoa CNTT1 tổ chức các chương trình giao lưu với sinh viên, tổ chức các cuộc thi bổ ích cho sinh viên.
+                                    <br>
+                                    - Tổ chức các hội thảo chuyên đề giúp các thành viên có cơ hội tiếp xúc với diễn giả uy tín.
+                                    <br>
+                                    - Tổ chức các hoạt động, các sự kiện các giải đấu, giúp gắn kết các thành viên trong CLB.
+                                    <br>
+                                    - Tìm kiếm truyền thông, và tham gia các cuộc thi cho thành viên ngoài phạm vi học viện.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading3">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+                                    Không học CNTT có được tham gia CLB không?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    IT PTIT club (IT) – là mái nhà chung của những sinh viên có đam mê lập trình, đến từ nhiều ngành học trong trường như: Công nghệ thông tin, An toàn thông tin, Điện tử,... cũng như các bạn học khối ngành kinh tế
+                                    <br>
+                                    => Mọi sinh viên đang theo học tại Học Viện Công Nghệ Bưu Chính Viễn Thông đều có thể tham gia CLB nhé!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading4">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapseOne">
+                                    Chưa biết gì về CNTT có được tham gia không?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    Trước khi là thành viên chính thức, các bạn sẽ được tham gia quá trình “đào tạo”, “rèn luyện” và “kiểm tra”. CLB sẽ đánh giá 1 “mầm non” có đủ điều kiện để trở thành thành viên chính thức hay không. Khả năng Teamwork, sự nhiệt tình và kiến thức của các bạn sẽ được xét 1 cách công bằng. Nói-không-với-sự-ưu-tiên!
+                                    <br>
+                                    => Bất cứ ai, dù chưa biết, biết một chút hay “master” đều có thể tự tin điền vào bản đăng ký nhé!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading5">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapseOne">
+                                    Tại sao lại có 2 CLB CNTT? Sự khác biệt giữa 2 CLB là gì?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    Mỗi CLB đều có những hành trình riêng. Mỗi hướng đi mà CLB chọn đều tạo nên những màu sắc đặc trưng riêng. Mỗi màu sắc đặc trưng riêng ấy lại gặt hái nhiều thành quả nổi bật riêng.
+                                    <br>
+                                    => Để so sánh CLB nào tốt hơn các bạn hãy trực tiếp trải nghiệm và đánh giá! Còn đối với tôi! Chúng tôi luôn tự hào là thành viên của đại gia đình IT PTIT!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading6">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapseOne">
+                                    CLB có bao nhiêu thành viên?
+                                </button>
+                            </h2>
+                            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    Tính đến năm 2020, CLB đã có hơn 500 thành viên thuộc tất cả các ngành của Học viện Công nghệ Bưu chính Viễn Thông. Trong đó, ngành CNTT chiếm đa số với hơn 400 thành viên.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading7">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapseOne">
+                                    Mô hình tổ chức CLB như thế nào?
+                                </button>
+                            </h2>
+                            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    - Khối Đào Tạo bao gồm 2 ban và 4 team dự án:<br>
+                                    * Ban Cơ Bản: Có nhiệm vụ đào tạo các kiến thức căn bản về lập trình.<br>
+                                    * Ban Thuật Toán: Có nhiệm vụ đào tạo những thuật toán nâng cao cho các thành viên CLB.<br>
+                                    * Team dự án: Gồm 4 team: Web, Mobile, Game, AI.<br>
+                                    <br><br>
+                                    - Khối Sự Kiện bao gồm 4 ban:<br>
+                                    * Ban Sự Kiện: Có nhiệm vụ tổ chức các sự kiện, cuộc thi của CLB, của trường.<br>
+                                    * Ban Truyền Thông: Có nhiệm vụ quảng bá hình ảnh CLB cho mọi người được biết.<br>
+                                    * Ban Tài Chính: Có nhiệm vụ quản lý tài chính của CLB.<br>
+                                    * Ban Esport: Có nhiệm vụ tổ chức các giải game cấp CLB.<br>
+                                    <br><br>
+                                    - Ngoài ra còn Ban Nội Các bao gồm những thành viên chủ lực để đưa CLB phát triển hơn.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-box py-2 rounded">
+                            <h2 id="heading8">
+                                <button type="button" class="text-left m-0 p-0 btn btn-block" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapseOne">
+                                    Làm sao để tham gia CLB?
+                                </button>
+                            </h2>
+                            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                                <div class="card-body text-muted">
+                                    Kế hoạch tuyển thành viên sẽ được cập nhật trên fanpage chính thức của CLB: <a href="https://www.facebook.com/ITPTIT">ITClub PTIT HN</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END WORK -->
+
+<!-- START CONTACT -->
+<section class="section bg-light" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center">
+                    <p class="title-sub-heading text-primary f-18">Liên hệ</p>
+                    <p class="title-desc text-muted mt-2">Kết nối với IT Club PTIT Hanoi</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-lg-6">
+
+                <div class="mt-4">
+                    <h5 class="f-18">Thông tin liên hệ</h5>
+                    <p class="text-muted"><i class="mdi mdi-email mr-2 text-primary"></i>clb.it.ptit@gmail.com</p>
+                    <p class="mb-2 mt-3 text-muted"><i class="mdi mdi-phone mr-2 text-primary"></i> 0911951895</p>
+                    <p class="mb-2 mt-3 text-muted"><i class="mdi mdi-map-marker mr-2 text-primary"></i>Học viện Công
+                        Nghệ Bưu Chính Viễn Thông</p>
+                </div>
+                <div class="mt-4">
+                    <h5 class="f-18">Theo dõi chúng tôi</h5>
+                    <ul class="list-inline social-icons-list pt-3">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/ITPTIT"><i class="mdi mdi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/channel/UC8Iwsz8PT07_yVpqEvG7MRw"><i
+                                    class="mdi mdi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="mt-4">
+                    <div class="custom-form mt-4">
+                        <div id="message"></div>
+                        <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                            <div class="row">
+
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-1">
+                                        <label class="contact-lable" for="name">Tên</label>
+                                        <input name="name" id="name" class="form-control" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-1">
+                                        <label class="contact-lable" for="email">Địa chỉ email</label>
+                                        <input name="email" id="email" class="form-control" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-1">
+                                        <label class="contact-lable" for="subject">Tiêu đề</label>
+                                        <input name="subject" id="subject" class="form-control" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-1">
+                                        <label class="contact-lable" for="comments">Nội dung</label>
+                                        <textarea name="comments" id="comments" rows="5"
+                                                  class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mt-3 text-right">
+                                    <input id="submit" name="send" class="submitBnt btn btn-primary btn-round"
+                                           value="Gửi tin nhắn" type="submit"/>
+                                    <div id="simple-msg"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CONTACT -->
+
+<!-- START FOOTER -->
+<section class="section bg-light pb-3 pt-3">
+    <div class="container">
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-muted mb-0">2021 © IT Club PTIT Hanoi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END FOOTER -->
+
+
+
+<!-- javascript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrollspy.min.js"></script>
+
+<!-- Portfolio -->
+<script src="js/ion.rangeSlider.min.js"></script>
+
+<!-- Portfolio -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/isotope.js"></script>
+
+
+<!--Partical js-->
+<script src="js/particles.js"></script>
+<script src="js/particles.app.js"></script>
+
+<!--flex slider plugin-->
+<script src="js/jquery.flexslider-min.js"></script>
+
+<!-- yt player -->
+<script src="js/jquery.mb.YTPlayer.js"></script>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- contact init -->
+<script src="js/contact.init.js"></script>
+
+<!-- Main Js -->
+<script src="js/app.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

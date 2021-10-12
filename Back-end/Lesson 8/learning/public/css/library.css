@@ -1,0 +1,19 @@
+body{
+    background-color: cornflowerblue !important;
+}
+.table-bordered td, .table-bordered th{
+    border:2px solid black !important;
+}
+h1{
+    text-align: center;
+    color: green;
+}
+input{
+    width: 200px !important;
+}
+th{
+    color: yellow;
+}
+td{
+    color: purple;
+}

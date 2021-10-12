@@ -1,0 +1,56 @@
+
+body{
+	background-color: lightpink !important; 
+}
+h1{
+	background-color: rgba(255, 99, 71, 1);
+	font-size: 25px; 
+	font-family: playfair; 
+	color: black; 
+	text-align: center;
+}
+
+
+img{
+	margin-left: 466.5px; 
+	height:500px; 
+	width:500px;
+}
+h2{
+	font-family: system-ui;
+	background-color: rgba(106, 90, 205);
+	font-size: 20px;
+	color:  white;
+	text-align: left;
+}
+p{
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	text-align: justify;
+}
+li{
+	font-weight: bold;  
+    font-style: italic;
+}
+table, th, td {
+	text-align: center;
+	border:1px solid black;
+}
+table {
+	background-color: rgb(255 164 71);
+	
+	border-collapse: collapse;
+	
+	width: 100%;
+
+}
+th {
+	height: 50px;
+	text-align: center;
+}
+a:hover{
+	color: red;
+}
+
+
