@@ -1210,7 +1210,7 @@ hr {
 }
 
 .bg-home-7 {
-  background-image: url(../images/bg-3.jpg);
+  background: #160b34;
   background-position: bottom;
   position: relative;
   display: -webkit-box;
@@ -1810,6 +1810,10 @@ textarea.form-control {
   .slider {
     width: 100%;
   }
+}
+
+.bg-home-7 img{
+  z-index: 990;
 }
 
 .avatar-image {
