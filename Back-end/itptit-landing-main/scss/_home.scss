@@ -6,6 +6,7 @@
   background-image: url(../images/bg-1.png);
     background-position: center center;
     position: relative;
+    height: 100vh;
     display: flex;
     background-repeat: no-repeat;
 }
@@ -194,6 +195,7 @@
   background-image: url(../images/bg-3.jpg);
   background-position: bottom;
   position: relative;
+  min-height: 100vh;
   display: flex;
 }
 
