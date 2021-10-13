@@ -84,10 +84,14 @@ function postform() {
         error: function(x, y, z)
             {
                 
-                alert("Đăng ký thành công, click OK bạn sẽ được chuyển về fanpage CLB");
-                
-                $('#form1').hide();
-                $(location).attr('href', 'https://facebook.com/ITPTIT')
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Đăng ký thành công, bạn sẽ được chuyển về fanpage CLB',
+                    icon: 'success',
+                    confirmButtonText: 'Okey!'
+                }).then(() => {
+                    window.location.href = "https://facebook.com/ITPTIT";
+                })
                 
             }
     });
