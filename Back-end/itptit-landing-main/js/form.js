@@ -16,7 +16,6 @@ function postform() {
     var formal_question3 = $('[name=formal-question3]').val()
     var formal_question4 = $('[name=formal-question4]').val()
     var main_question1 = $('[name=main-question1]').val()
-    var main_question2 = ''
     var main_question3 = ''
     var main_question4 = ''
     var main_question5 = ''
@@ -28,8 +27,6 @@ function postform() {
    
     
     if(subject === "cndpt"){
-        main_question1 = ''
-        main_question2 = $('[name=main-question1]').val()
         main_question3 = $('[name=main-question2]').val()
         main_question4 = $('[name=main-question3]').val()
         
@@ -66,7 +63,6 @@ function postform() {
         "entry.1138890151": formal_question3,
         "entry.773555376": formal_question4,
         "entry.390096612": main_question1,
-        "entry.390096612": main_question2,
         "entry.1002920082": main_question3,
         "entry.1070723770": main_question4,
         "entry.1873524973": main_question5,
